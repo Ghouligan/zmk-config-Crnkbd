@@ -51,10 +51,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp M      &kp Q   &trans  &kp W     &kp E   &kp ESCAPE    &trans   &trans  &trans    &trans  &trans  &kp BSPC
-&kp LCTRL  &trans  &kp A   &kp S     &kp D   &trans        &trans   &trans  &trans    &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans        &trans   &trans  &trans    &trans  &trans  &trans
-                           &kp LGUI  &mo 3   &kp SPACE     &kp RET  &to 0   &kp RALT
+&kp M      &kp Q   &trans  &kp W     &kp E   &kp ESCAPE    &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV     &trans         &kp BSPC
+&kp LCTRL  &trans  &kp A   &kp S     &kp D   &trans        &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &trans
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans        &trans         &trans          &trans         &trans         &trans         &bootloader
+                           &kp LGUI  &mo 3   &kp SPACE     &kp RET        &to 0           &kp RALT
             >;
         };
 
